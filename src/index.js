@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Vk from '../assets/img/vk.png';
 
-class VkLogin extends Component {
+class VkAuth extends Component {
 
     constructor(props) {
         super(props);
@@ -54,12 +53,10 @@ class VkLogin extends Component {
         window.VK.Auth.login(this.checkLoginState);
     };
 
-    containerStyle = () => Object.assign(style, this.props.containerStyle);
-
     render() {
-        const { disabled, callback, apiId, ...buttonProps } = this.props;
+        const { disabled, callback, apiId, containerStyle, ...buttonProps } = this.props;
         return (
-        <span style={ this.containerStyle() }>
+        <span style={containerStyle}>
             <button
             {...buttonProps}
             onClick={this.handleClick}
@@ -70,11 +67,11 @@ class VkLogin extends Component {
     }
 }
 
-VkLogin.propTypes = {
+VkAuth.propTypes = {
   disabled: PropTypes.bool,
   callback: PropTypes.func.isRequired,
   apiId: PropTypes.string.isRequired,
   containerStyle: PropTypes.object
 };
 
-export default VkLogin;
+export default VkAuth;
