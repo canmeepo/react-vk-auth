@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-`yarn add react-facebook-login` or `npm install react-facebook-login`
+`yarn add react-vk-auth` or `npm i react-vk-auth`
 
 ## Basic example
 
@@ -20,7 +20,7 @@ class Registration extends Component {
   
   render() {
     return(
-      <VkLogin apiId="#######" callback={this.handleVkResponse} />
+      <VkAuth apiId="#######" callback={this.handleVkResponse} />
     )
   }
 }
