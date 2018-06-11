@@ -3,6 +3,23 @@
   "version": "0.0.1",
   "description": "react component for vk.com authorization",
   "main": "build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/canmeepo/react-vk-auth.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-component",
+    "vk-auth",
+    "react-vk-auth",
+    "vkontane-auth"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/canmeepo/react-vk-auth/issues"
+  },
+  "homepage": "https://github.com/canmeepo/react-vk-auth",
   "peerDependencies": {
     "react": "^16.3.2"
   },
